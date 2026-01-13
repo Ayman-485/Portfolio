@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Ayman Hussain | AI Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#020617] text-white">
+
+    <nav class="fixed top-0 w-full z-50 border-b border-white/10 bg-[#020617]/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-tight">Mohammed<span class="text-sky-400">.dev</span></div>
+            <div class="hidden md:flex space-x-8 text-sm text-gray-400 font-medium">
+                <a href="#home" class="nav-link hover:text-white transition">Home</a>
+                <a href="#about" class="nav-link hover:text-white transition">About</a>
+                <a href="#skills" class="nav-link hover:text-white transition">Skills</a>
+                <a href="#services" class="nav-link hover:text-white transition">Services</a>
+                <a href="#portfolio" class="nav-link hover:text-white transition">Portfolio</a>
+                <a href="#contact" class="nav-link hover:text-white transition">Contact</a>
+            </div>
+            <button onclick="scrollToSection('contact')" class="bg-sky-500 hover:bg-sky-600 px-5 py-2 rounded-lg text-sm font-semibold transition">Get In Touch</button>
+        </div>
+    </nav>
+
+    <section id="home" class="relative pt-32 pb-20 px-6 max-w-7xl mx-auto flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 space-y-6">
+            <div class="inline-flex items-center space-x-2 bg-sky-500/10 border border-sky-500/20 px-3 py-1 rounded-full">
+                <span class="text-xs text-sky-400 font-medium tracking-wide">Available for opportunities</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold leading-tight">Hello, I'm <br> <span class="text-sky-400">Mohammed Ayman Hussain</span></h1>
+            <p class="text-gray-400 text-lg">BCA Student | Data Science & Big Data Analytics | AI Enthusiast | Web Developer</p>
+            <div class="flex space-x-4">
+                <button onclick="scrollToSection('portfolio')" class="bg-sky-500 hover:bg-sky-600 px-8 py-3 rounded-xl font-bold transition">View Portfolio</button>
+                <button onclick="scrollToSection('contact')" class="bg-white/5 border border-white/10 px-8 py-3 rounded-xl font-bold transition">Contact Me</button>
+            </div>
+        </div>
+        <div class="md:w-1/2 flex justify-center mt-12 md:mt-0">
+            <div class="relative w-72 h-72">
+                <img src="DP.jpeg" class="rounded-full border-4 border-sky-500/30 grayscale hover:grayscale-0 transition-all duration-500">
+                <div class="absolute -top-2 -right-4 bg-slate-900 border border-white/10 px-3 py-1 rounded text-xs font-bold text-sky-400">AI Enthusiast</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 px-6 max-w-7xl mx-auto border-t border-white/5">
+        <h2 class="text-sky-400 font-bold mb-2">ABOUT ME</h2>
+        <h3 class="text-4xl font-bold mb-8">Designing Solutions, Not Just Visuals</h3>
+        <div class="grid md:grid-cols-2 gap-12">
+            <p class="text-gray-400 leading-relaxed">I am a BCA student specializing in Data Science and Big Data Analytics. I am deeply interested in using Artificial Intelligence to work faster and save time. I enjoy exploring AI tools and diving deep into how intelligent systems can enhance productivity and decision-making.</p>
+            <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                <h4 class="font-bold text-sky-400 mb-2">Education</h4>
+                <p class="font-bold">Bachelor of Computer Applications (BCA)</p>
+                <p class="text-sm text-gray-500">Yenepoya Institute of Arts, Science and Commerce</p>
+                <p class="text-xs text-sky-500 mt-2 italic">Expected Graduation: 2026</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 px-6 max-w-7xl mx-auto border-t border-white/5">
+        <h2 class="text-sky-400 font-bold mb-12">TECHNICAL EXPERTISE</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="glass-card p-6 rounded-2xl">
+                <h4 class="font-bold mb-6 flex items-center gap-2"><i data-lucide="code"></i> Programming</h4>
+                <div class="space-y-4">
+                    <div><div class="flex justify-between text-xs mb-1"><span>Python</span><span>75%</span></div>
+                    <div class="h-1.5 bg-white/10 rounded-full"><div class="h-1.5 bg-sky-400 rounded-full" style="width:75%"></div></div></div>
+                    <div><div class="flex justify-between text-xs mb-1"><span>Web Dev</span><span>80%</span></div>
+                    <div class="h-1.5 bg-white/10 rounded-full"><div class="h-1.5 bg-sky-400 rounded-full" style="width:80%"></div></div></div>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <section id="services" class="py-20 px-6 max-w-7xl mx-auto border-t border-white/5">
+        <h2 class="text-sky-400 font-bold mb-2 uppercase tracking-widest text-xs">Services</h2>
+        <h3 class="text-4xl font-bold mb-12">What I Can Do For You</h3>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="glass-card p-8 rounded-2xl hover:border-sky-500/50 transition">
+                <i data-lucide="monitor" class="text-sky-400 mb-4"></i>
+                <h4 class="text-xl font-bold mb-2">Responsive Design</h4>
+                <p class="text-sm text-gray-400">Ensuring websites look great and function perfectly on all devices and screen sizes.</p>
+            </div>
+            <div class="glass-card p-8 rounded-2xl hover:border-sky-500/50 transition">
+                <i data-lucide="code-2" class="text-sky-400 mb-4"></i>
+                <h4 class="text-xl font-bold mb-2">Frontend Development</h4>
+                <p class="text-sm text-gray-400">Building interactive and dynamic web applications using modern frameworks.</p>
+            </div>
+            <div class="glass-card p-8 rounded-2xl hover:border-sky-500/50 transition">
+                <i data-lucide="zap" class="text-sky-400 mb-4"></i>
+                <h4 class="text-xl font-bold mb-2">Performance Optimization</h4>
+                <p class="text-sm text-gray-400">Optimizing websites for speed, SEO, and best practices to deliver fast user experiences.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-20 px-6 max-w-7xl mx-auto border-t border-white/5">
+        <h3 class="text-4xl font-bold mb-12">Featured Projects</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="glass-card rounded-2xl overflow-hidden group">
+                <div class="h-48 bg-purple-500/10 flex items-center justify-center">
+                    <i data-lucide="shopping-bag" class="text-purple-400 w-12 h-12"></i>
+                </div>
+                <div class="p-6">
+                    <h4 class="font-bold">Knot by Tees</h4>
+                    <p class="text-sm text-gray-400 mt-2">E-commerce for crocheted items.</p>
+                    <button class="text-sky-400 text-xs font-bold mt-4">View Details →</button>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <section id="contact" class="py-20 px-6 max-w-7xl mx-auto border-t border-white/5">
+        <div class="grid md:grid-cols-2 gap-16">
+            <div>
+                <h3 class="text-4xl font-bold mb-6">Let's Work Together</h3>
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4 text-gray-400 hover:text-white transition">
+                        <div class="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center"><i data-lucide="mail" class="w-5 h-5"></i></div>
+                        <span>mohammedaymanhussain96@gmail.com</span>
+                    </div>
+                    <div class="flex items-center gap-4 text-gray-400 hover:text-white transition">
+                        <div class="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center"><i data-lucide="phone" class="w-5 h-5"></i></div>
+                        <span>+91 7349787331</span>
+                    </div>
+                </div>
+            </div>
+            <form id="contactForm" class="space-y-4">
+                <div class="grid grid-cols-2 gap-4">
+                    <input type="text" placeholder="Your Name" class="bg-white/5 border border-white/10 p-4 rounded-xl focus:outline-none focus:border-sky-500 transition">
+                    <input type="email" placeholder="Your Email" class="bg-white/5 border border-white/10 p-4 rounded-xl focus:outline-none focus:border-sky-500 transition">
+                </div>
+                <textarea placeholder="Your Message" rows="4" class="w-full bg-white/5 border border-white/10 p-4 rounded-xl focus:outline-none focus:border-sky-500 transition"></textarea>
+                <button type="submit" class="w-full bg-sky-500 hover:bg-sky-600 py-4 rounded-xl font-bold transition">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
